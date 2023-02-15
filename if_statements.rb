@@ -33,6 +33,16 @@ end
 # if you have enough money to buy a gumball. A gumball costs
 # two quarters.
 
+num_quarters = 0 
+
+if num_quarters > 2
+    p "I have enough money for a gumball"
+  else num_quarters < 2
+    p "I don't have enough money for a gumball"
+end
+
+p num_quarters
+
 # Right now, the program will print
 # out both "I have enough money for a gumball" and
 # "I don't have enough money for a gumball". Write a 
@@ -40,11 +50,6 @@ end
 
 # Experiment with manipulating the value held within num_quarters
 # to make sure both conditions can be achieved.
-
-num_quarters = 0
-
-puts "I have enough money for a gumball"
-puts "I don't have enough money for a gumball"
 
 
 #####################
@@ -58,8 +63,25 @@ puts "I don't have enough money for a gumball"
 # If cups_of_flour = 2 and has_sauce = true, print "I can make pizza"
 # If cups_of_flour = 3 and has_sauce = true, print "I can make pizza"
 
+cups_of_flour = 4
+has_sauce = true
+  
+  if cups_of_flour >= 2 && has_sauce == true
+    p "I can make a pizza"
+  elsif cups_of_flour < 2 && has_sauce == false
+    p "I cannot make pizza"
+  elsif cups_of_flour >= 2 && has_sauce == false
+    p "I cannot make pizza"
+  else cups_of_flour <= 2 && has_sauce == false
+    p "I cannot make a pizza"
+  end
+  
+  
+
+  
+
 # Experiment with manipulating the value held within both variables
 # to make sure all above conditions output what you expect.
 
-cups_of_flour = 1
-has_sauce = true
+# cups_of_flour = 1
+# has_sauce = true
